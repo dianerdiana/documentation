@@ -4,11 +4,11 @@ import { store } from './redux/store'
 import { Provider } from 'react-redux'
 
 // ** Lazy load app
-const UserList = lazy(() => import('./user'))
+const LazyApp = lazy(() => import('./App'))
 
 ReactDOM.render(
     <Provider store={store}>
-      <UserList />
+      <LazyApp />
     </Provider>,
   document.getElementById('root')
 )

@@ -1,11 +1,9 @@
-// Import Store
+// Import store from specipic folder that we created
+import users from '../user/store'
 
-import users from '../user'
-import companies from '../company'
-
+// Var for accomodate reducers
 const rootReducer = {
-  users,
-  companies
+  users
 }
 
 export default rootReducer

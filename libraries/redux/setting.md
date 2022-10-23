@@ -206,7 +206,7 @@ const UserList = () => {
             return (
               <ol key={user.id}>
                 {user.name}
-                <br>
+                <br />
                 <button onClick={() => {
                   handleDelete(user.id)
                 }}>
@@ -217,7 +217,7 @@ const UserList = () => {
           })
         }
       </li>
-    <div>
+    </div>
   )
 }
 
