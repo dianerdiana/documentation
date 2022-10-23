@@ -1,7 +1,7 @@
 # Cara menggunakan menggunakan react-redux
 ___
 
-Dokumentasi bisa di lihat [react-redux documentation]('https://react-redux.js.org/')
+Dokumentasi bisa di lihat [react-redux](https://react-redux.js.org/)
 
 ## Install Package
 
