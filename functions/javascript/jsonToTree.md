@@ -2,6 +2,40 @@
 
 ## Live Demo bisa dilihat [disini](https://codesandbox.io/s/convert-json-to-tree-604nth?file=/src/index.js)
 
+## Versi Baru:
+```javascript
+const getChildren = (items, rawChildren) => {
+  const children = rawChildren.map(child => {
+    const itemsFilter = items.filter(item => {
+      return child.parent_id === item.id
+    })
+
+    return { ...child, children: itemsFilter }
+  })
+}
+
+export const jsonToTree = (items) => {
+  const mappedArray = items.map((item) => {
+    const createChildren = items.filter(
+      (child) => child.parent_id === item.id
+    );
+
+    const children = createChildren.map((item) => {
+      const children = items.filter((child) => {
+        return child.parent_id === item.id;
+      });
+
+      return { ...item, children };
+    });
+
+    return { ...item, children };
+  });
+
+  return mappedArray.filter((map) => map.parent_id === null);
+};
+```
+
+## Versi Lama
 ```javascript
 const jsonToTree = (items) => {
   const tree = [];
