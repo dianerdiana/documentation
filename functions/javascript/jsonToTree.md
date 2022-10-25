@@ -1,3 +1,8 @@
+# Mengubah object ke bentuk tree
+
+## Live Demo bisa dilihat [disini]()
+
+```javascript
 const jsonToTree = (items) => {
   const tree = [];
   const mappedArray = {};
@@ -28,3 +33,4 @@ const jsonToTree = (items) => {
 
   return tree;
 }
+```
