@@ -7,6 +7,8 @@ Dokumentasi bisa di lihat [react-redux](https://react-redux.js.org/)
 
 Hal pertama yang dibutuhkan untuk menggunakan redux adalah packagenya, yang perlu di install:
 
+`npm i redux react-redux @reduxjs/toolkit`
+
 1. redux
 2. react-redux
 3. @reduxjs/toolkit
