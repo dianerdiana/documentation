@@ -10,13 +10,14 @@
 
 # Make Command
 
-| command                                                   | Note                                               |
-| --------------------------------------------------------- | -------------------------------------------------- |
-| php artisan make:migration create_`nama_table`_table      | Untuk membuat table migrations                     |
-| php artisan make:controller `nama_controller`             | Untuk membuat controller baru                      |
-| php artisan make:controller `nama_folder\nama_controller` | Untuk membuat folder dengan controller di dalamnya |
-| ** create_`nama_table`_table --create=`nama_table`        | Supaya tidak keliru membuat namanya                |
-| php artisan make:middleware `nama_middleware`             | Untuk membuat middleware                           |
+| command                                                      | Note                                               |
+| ------------------------------------------------------------ | -------------------------------------------------- |
+| php artisan make:migration create_`nama_table`_table         | Untuk membuat table migrations                     |
+| php artisan make:migration add_`kolom`_to_`nama_table`_table | Untuk menambah kolom ke table yang sudah ada       |
+| php artisan make:controller `nama_controller`                | Untuk membuat controller baru                      |
+| php artisan make:controller `nama_folder\nama_controller`    | Untuk membuat folder dengan controller di dalamnya |
+| php artisan {...} --table=`nama_table`                       | Untuk mendefinisikan nama table                    |
+| php artisan make:middleware `nama_middleware`                | Untuk membuat middleware                           |
 
 # Composer Command
 
