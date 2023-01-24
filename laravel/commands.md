@@ -1,11 +1,12 @@
 # General Command
 
-| Command                      | Note                                          |
-| ---------------------------- | --------------------------------------------- |
-| php artisan migrate          | Untuk migrasi database                        |
-| php artisan migrate:rollback | Untuk mengemablikan migrasi database terakhir |
-| php artisan config:cache     | Untuk membersihkan                            |
-| php artisan config: clear    | Untuk membersihkan                            |
+| Command                      | Note                                                                 |
+| ---------------------------- | -------------------------------------------------------------------- |
+| php artisan migrate          | Untuk migrasi database                                               |
+| php artisan migrate:rollback | Untuk mengemablikan migrasi database terakhir                        |
+| php artisan config:cache     | Untuk membersihkan                                                   |
+| php artisan config: clear    | Untuk membersihkan                                                   |
+| php artisan storage:link     | Untuk memindahkan storage dari storage/app/storage ke public/storage |
 
 
 # Make Command
